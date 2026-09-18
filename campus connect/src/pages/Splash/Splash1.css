@@ -1,0 +1,17 @@
+.splash-1 {
+  background: #70DCE0;
+  position: relative;
+}
+
+.splash-skip-link {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: var(--fs-body-sm);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.splash-skip-link:hover {
+  text-decoration: underline;
+}

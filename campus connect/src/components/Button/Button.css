@@ -1,0 +1,15 @@
+.app-button {
+  width: var(--field-width);
+  height: var(--input-height);
+  background: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius-button);
+  font-family: var(--font-body);
+  font-size: var(--fs-button);
+  cursor: pointer;
+}
+
+.app-button:hover {
+  opacity: 0.9;
+}
