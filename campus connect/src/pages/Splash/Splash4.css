@@ -1,0 +1,55 @@
+.splash-4 {
+  background: #5B47B5;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.splash-4 .splash-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.splash-4 .splash-logo {
+  width: 80px;
+  height: 80px;
+}
+
+.splash-4 .splash-title {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 700;
+  color: #70DCE0;
+  margin: 0;
+}
+
+.splash-4 .splash-tagline {
+  font-size: var(--fs-body-lg);
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+.splash-actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.splash-button-link {
+  text-decoration: none;
+}
+
+.splash-4 .app-button {
+  background: #70DCE0;
+  color: #5B47B5;
+}
+
+.splash-4 .app-button:hover {
+  opacity: 0.9;
+}

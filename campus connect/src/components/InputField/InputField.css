@@ -1,0 +1,25 @@
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: var(--field-width);
+}
+
+.input-field-label {
+  font-size: var(--fs-button);
+  color: var(--color-text);
+}
+
+.input-field-box {
+  height: var(--input-height);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-input);
+  width: 100%;
+  padding: 0 14px;
+  font-size: var(--fs-button);
+}
+
+.input-field-box:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
