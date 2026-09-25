@@ -12,6 +12,12 @@ body {
   justify-content: center;
 }
 
+.splash-screen {
+  width: 430px;
+  min-height: 100vh;
+  position: relative;
+}
+
 .screen {
   width: 430px;
   min-height: 932px;

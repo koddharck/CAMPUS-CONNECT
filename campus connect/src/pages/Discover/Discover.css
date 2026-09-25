@@ -1,0 +1,123 @@
+.discover-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 100px;
+}
+
+.discover-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: white;
+}
+
+.discover-back-btn,
+.discover-notify-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.discover-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.discover-section {
+  padding: 0 16px;
+}
+
+.discover-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.discover-section-header h2 {
+  font-size: var(--fs-button);
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-text);
+}
+
+.discover-see-all {
+  font-size: var(--fs-body-sm);
+  color: var(--color-signup-link);
+  text-decoration: none;
+}
+
+.discover-see-all:hover {
+  text-decoration: underline;
+}
+
+.discover-cards-row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.discover-card,
+.discover-community-card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  flex-shrink: 0;
+  width: 160px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.discover-card-avatar,
+.discover-community-icon {
+  width: 40px;
+  height: 40px;
+  background: #e0e0e0;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.discover-community-icon {
+  background: #bef3f8;
+}
+
+.discover-card-name,
+.discover-community-name {
+  font-size: var(--fs-button);
+  font-weight: 600;
+  margin: 8px 0 4px 0;
+  color: var(--color-text);
+}
+
+.discover-card-meta,
+.discover-community-info {
+  font-size: var(--fs-body-sm);
+  color: #666;
+  margin: 0;
+}
+
+.discover-card-action,
+.discover-community-action {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.discover-community-action {
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background: white;
+}

@@ -1,9 +1,10 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import InputField from '../../components/InputField/InputField.jsx'
 import Button from '../../components/Button/Button.jsx'
 import Divider from '../../components/Divider/Divider.jsx'
 import SocialLoginButton from '../../components/SocialLoginButton/SocialLoginButton.jsx'
+import { saveAuth } from '../../utils/auth.js'
 import './SignUp.css'
 
 function SignUp() {
@@ -12,10 +13,18 @@ function SignUp() {
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
   const [showPassword, setShowPassword] = useState(false)
+  const navigate = useNavigate()
 
   function handleSubmit(e) {
     e.preventDefault()
-    console.log('sign up', { fullName, email, password, confirmPassword })
+
+    if (password !== confirmPassword) {
+      alert("Passwords don't match")
+      return
+    }
+
+    saveAuth({ fullName, email })
+    navigate('/onboarding-1')
   }
 
   function togglePasswordVisibility() {

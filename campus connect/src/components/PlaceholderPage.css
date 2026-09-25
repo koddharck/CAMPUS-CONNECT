@@ -1,0 +1,22 @@
+.placeholder-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.placeholder-title {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  color: var(--color-signup-link);
+  margin-bottom: 12px;
+}
+
+.placeholder-note {
+  font-size: var(--fs-body-sm);
+  color: #818181;
+  max-width: 280px;
+}

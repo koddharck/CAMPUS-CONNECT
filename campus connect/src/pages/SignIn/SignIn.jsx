@@ -1,18 +1,21 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import InputField from '../../components/InputField/InputField.jsx'
 import Button from '../../components/Button/Button.jsx'
 import Divider from '../../components/Divider/Divider.jsx'
 import SocialLoginButton from '../../components/SocialLoginButton/SocialLoginButton.jsx'
+import { saveAuth } from '../../utils/auth.js'
 import './SignIn.css'
 
 function SignIn() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const navigate = useNavigate()
 
   function handleSubmit(e) {
     e.preventDefault()
-    console.log('sign in', email, password)
+    saveAuth({ email })
+    navigate('/home')
   }
 
   return (
